@@ -60,7 +60,7 @@ def print_summary(report: dict):
 def save_report(report: dict, output_dir: str = "output"):
     os.makedirs(output_dir, exist_ok=True)
     domain_slug = report["meta"]["target"].replace(".", "_").replace("/", "_")
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    timestamp = datetime.now().strftime("%d%m%Y_%H%M%S")
     filename = f"{output_dir}/{domain_slug}_{timestamp}.json"
     with open(filename, "w") as f:
         json.dump(report, f, indent=2, default=str)
