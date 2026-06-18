@@ -1,0 +1,18 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Output reports (IMPORTANT - prevents leaking scan results)
+output/
+*.json
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
